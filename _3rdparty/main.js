@@ -40,7 +40,7 @@
   var mform = $("#marshall-form");
   mform.ajaxChimp({
       callback: callbackFunction,
-      url: 'https://twitter.us20.list-manage.com/subscribe/post?u=e3b0ed2f281342214910100c2&amp;id=117659435c'
+      url: 'https://twitter.us20.list-manage.com/subscribe/post?u=e3b0ed2f281342214910100c2&amp;id=117659435c' 
   });
   function callbackFunction (resp) {
       if (resp.result === 'success') {
