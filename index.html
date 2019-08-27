@@ -12,7 +12,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link type="text/css" rel="stylesheet" href="_3rdparty/normalize.css">
         <link type="text/css" rel="stylesheet" href="_3rdparty/font-awesome-4.5.0/css/font-awesome.css">
-		<link type="text/css" rel="stylesheet" href="../../../fonts.googleapis.com/cssd644.css?family=Montserrat:300,400,700">
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
         <link type="text/css" rel="stylesheet" href="earthie.css">
     </head>
     <body>	
@@ -52,7 +52,7 @@
 			<div class="Socials">
 				<ul>
 					<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://www.twitter.com/animation_loop/" target="_blank"><i class="fa fa-twitter"></i></a></li>
 					<li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
 					<li><a href="https://www.instagram.com/loopanimations/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 					<li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -115,10 +115,22 @@
 					<div class="SectionContent">
 						<div>
 							<p><strong>Get notified when we go live online!</strong></p>
-							<form method="POST" class="SubscribeForm" id="SubscribeForm" action="http://demos.boomapps.eu/earthie/earthie_dark/subscribe.php">
+							<!-- <form method="POST" class="SubscribeForm" id="SubscribeForm" action="http://demos.boomapps.eu/earthie/earthie_dark/subscribe.php">
 								<input type="text" name="Email" id="SubscribeFormEmail" placeholder="Enter your email address" autocomplete="off" /><br />
 								<a href="#" class="NiceLink" id="SubscribeSubmit">Subscribe</a>
-							</form>							
+							</form>		 -->
+							
+							<!-- <form id="SubscribeForm" class="marshall-newsletter-content SubscribeForm">
+								<input id="SubscribeFormEmail" class="greenColor" type="email" placeholder="Enter your email address" autocomplete="off">
+								<button id="SubscribeSubmit" class="marshall_submit greenBackground NiceLink" type="submit">Send</button>
+								<label for="SubscribeFormEmail"></label>
+							</form> -->
+
+							<form id="marshall-form" class="marshall-newsletter-content">
+								<input id="marshall-email" class="greenColor" type="email" placeholder="Your Email">
+								<button class="marshall_submit greenBackground" type="submit">Send</button>
+								<label for="marshall-email"></label>
+							</form>
 							<div class="SubscribeFormStatus" id="SubscribeFormStatus" data-success="You've been subscribed!" data-fail="An error occured. Please try again.">STATUS</div>
 						</div>
 					</div>
@@ -174,9 +186,9 @@
 			
 		</div>
 		
-        <script src="../../../ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="_3rdparty/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="_3rdparty/jquery-2.2.4.min.js"><\/script>')</script>
-		<script src="../../../maps.googleapis.com/maps/api/js1c1e?key=AIzaSyBtijRL75f9lEcRVLjeWxQDfGkL9i5NV9A"></script>
+		<script src="_3rdparty/js1c1e?key=AIzaSyBtijRL75f9lEcRVLjeWxQDfGkL9i5NV9A"></script>
 		<script src="_3rdparty/jquery.plugin.min.js"></script>
 		<script src="_3rdparty/jquery.countdown.min.js"></script>
 		<script src="_3rdparty/three.js/three.min.js"></script>
@@ -187,6 +199,10 @@
 
 		<script src="_3rdparty/three.js/Detector.js"></script>
 		<script src="earthie.js"></script>
+
+		<!-- Added files -->
+		<script src="_3rdparty/jquery.ajaxchimp.min.js"></script>
+		<script src="_3rdparty/main.js"></script>
     </body>
 
 </html>
