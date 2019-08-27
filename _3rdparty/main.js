@@ -37,8 +37,6 @@
   9. NEWSLETTER FORM INIT
 --------------------------------------------------------------*/
 
-if ( $("#marshall-form").is_exist() ) {
-
   var mform = $("#marshall-form");
   mform.ajaxChimp({
       callback: callbackFunction,
@@ -75,8 +73,6 @@ if ( $("#marshall-form").is_exist() ) {
        }, 900);
     }
   });
-
-}
 
 
 
